@@ -84,3 +84,13 @@ To create a React Vite project, you can follow these steps:
    ```bash
    npm run dev
    ```
+
+## Build and Deploy React App
+
+First Build your app with the following command:
+
+```bash
+npm run build
+```
+
+A build package will be created in your project. Use that to deploy on Netlifly, Github Pages etc.
