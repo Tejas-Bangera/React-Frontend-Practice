@@ -6,11 +6,14 @@ import { books } from "./bookData";
 import Book from "./components/Book";
 
 const BookList = () => (
-  <section className="booklist">
-    {books.map((book) => (
-      <Book key={book.id} {...book} />
-    ))}
-  </section>
+  <>
+    <h1>Amazon best sellers</h1>
+    <section className="booklist">
+      {books.map((book, index) => (
+        <Book key={book.id} {...book} index={index} />
+      ))}
+    </section>
+  </>
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
