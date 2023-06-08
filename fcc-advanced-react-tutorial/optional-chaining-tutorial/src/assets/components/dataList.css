@@ -1,0 +1,7 @@
+.person-data-container {
+  margin-top: 50px;
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
