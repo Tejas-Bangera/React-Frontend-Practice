@@ -1,0 +1,19 @@
+.users-container {
+  width: 400px;
+  padding: 30px;
+  border: solid 1px black;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.user-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-remove-button {
+  color: white;
+  font-size: 15px;
+}
