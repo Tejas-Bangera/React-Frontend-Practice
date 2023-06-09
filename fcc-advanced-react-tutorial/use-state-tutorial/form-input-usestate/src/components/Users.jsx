@@ -1,5 +1,4 @@
 import "./users.css";
-import { useState } from "react";
 
 const Users = ({ commonUsers, setCommonUsers }) => {
   const handleClick = (email) => {
