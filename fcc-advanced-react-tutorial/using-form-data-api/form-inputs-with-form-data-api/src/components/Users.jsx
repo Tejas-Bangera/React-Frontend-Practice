@@ -1,10 +1,22 @@
+import { useGlobalContext } from "../App";
 import "./users.css";
+import { data } from "../data";
 
-const Users = ({ commonUsers, setCommonUsers }) => {
-  const handleClick = (email) => {
+const Users = () => {
+  const { users: commonUsers, setUsers: setCommonUsers } = useGlobalContext();
+
+  const handleRemoveUser = (email) => {
     const updatedUsers = commonUsers.filter((user) => user.email !== email);
     setCommonUsers(updatedUsers);
   };
+
+  const handleClearUsers = () => {
+    setCommonUsers([]);
+  };
+  const handleResetUsers = () => {
+    setCommonUsers(data);
+  };
+
   return (
     <>
       <div className="users-container">
@@ -15,7 +27,7 @@ const Users = ({ commonUsers, setCommonUsers }) => {
               <div>{user.name}</div>
               <button
                 type="button"
-                onClick={() => handleClick(user.email)}
+                onClick={() => handleRemoveUser(user.email)}
                 className="user-remove-button"
               >
                 Remove
@@ -23,6 +35,23 @@ const Users = ({ commonUsers, setCommonUsers }) => {
             </div>
           );
         })}
+        {commonUsers.length < 1 ? (
+          <button
+            type="button"
+            className="users-clear-button"
+            onClick={handleResetUsers}
+          >
+            Reset
+          </button>
+        ) : (
+          <button
+            type="button"
+            className="users-clear-button"
+            onClick={handleClearUsers}
+          >
+            Clear
+          </button>
+        )}
       </div>
     </>
   );

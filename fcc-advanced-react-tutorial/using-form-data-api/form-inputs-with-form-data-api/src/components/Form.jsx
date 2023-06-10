@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { frameworks } from "../data";
 import "./form.css";
+import { useGlobalContext } from "../App";
 
-const Form = ({ commonUsers, setCommonUsers }) => {
+const Form = () => {
+  const { users: commonUsers, setUsers: setCommonUsers } = useGlobalContext();
   const [signedIn, setSignedIn] = useState(false);
 
   const handleSubmit = (event) => {
