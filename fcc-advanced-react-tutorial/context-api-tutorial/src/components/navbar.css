@@ -1,0 +1,48 @@
+.navbar-container {
+  width: 97vw;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-title {
+  margin: 0;
+  width: 150px;
+  font-size: 17px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.navbar-links-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-item {
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.login-info-container {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.login-info {
+  margin: 0;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.login-info-button {
+  background-color: #666eff;
+  color: white;
+  border: none;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
