@@ -1,4 +1,7 @@
-const UserContainer = ({ user, logout }) => {
+import { useNavbarContext } from "./Navbar";
+
+const UserContainer = () => {
+  const { user, logout } = useNavbarContext();
   return (
     <div className="login-info-container">
       <p className="login-info">Hello there! {user?.name?.toUpperCase()}</p>
