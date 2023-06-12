@@ -55,3 +55,5 @@ ReactDOM.render(
   document.getElementById("root")
 );
 ```
+
+That's it, you are good to go!
