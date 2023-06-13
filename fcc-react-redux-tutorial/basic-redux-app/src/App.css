@@ -1,0 +1,15 @@
+.main-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hello-world-text {
+  font-size: 25px;
+}
+
+.tech-style {
+  font-weight: bold;
+  font-style: italic;
+}
