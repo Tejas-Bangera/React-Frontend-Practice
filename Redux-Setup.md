@@ -1,4 +1,4 @@
-## Redux Setup
+## React-Redux Setup
 
 ```sh
 npm install @reduxjs/toolkit react-redux
