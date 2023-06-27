@@ -101,17 +101,31 @@ p {
   margin-bottom: 10px;
 }
 
+.minus {
+  border-right: 3px solid rgb(219, 0, 0);
+}
+
+.plus {
+  border-right: 3px solid rgb(0, 196, 0);
+}
+
 #delete-button {
   margin-left: 5px;
   padding: 0 5px 2px 5px;
   border: none;
-  background-color: rgb(255, 33, 33);
+  background-color: rgb(228, 228, 228);
   color: white;
   cursor: pointer;
   transition: background-color 0.2s;
+  border-radius: 3px;
+  /* opacity: 0; */
 }
 
-#delete-button:hover {
+.transaction:hover #delete-button {
+  background-color: rgb(189, 189, 189);
+}
+
+.transaction:hover #delete-button:hover {
   background-color: rgb(219, 0, 0);
 }
 
